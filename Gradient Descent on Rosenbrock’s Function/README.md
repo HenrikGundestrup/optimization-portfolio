@@ -1,33 +1,69 @@
-# Gradient Descent on Rosenbrock’s Function
+# 🧮 Gradient Descent on Rosenbrock’s Function
 
-## 📌 Problem
-The **Rosenbrock function** is a classic non-convex test function for optimization algorithms:
+The **Rosenbrock function** is a classic non-convex test function used to evaluate optimization algorithms:
 
-$$
-f(x, y) = (a - x)^2 + b(y - x^2)^2, \quad a = 1, \, b = 100
-$$
+\[
+f(x, y) = (a - x)^2 + b(y - x^2)^2
+\]
+where \( a = 1 \) and \( b = 100 \).
 
-It has a global minimum at $(x, y) = (1, 1)$, but the narrow, curved valley makes it challenging for basic optimization methods.  
-The goal of this project is to apply **Gradient Descent (GD)** and analyze its convergence behavior.
+It has a **global minimum** at \( (x, y) = (1, 1) \), but the narrow, curved valley makes it a challenge for basic optimization methods.
+
+---
 
 ## ⚙️ Method
-- Implemented **Gradient Descent from scratch** in Python.
-- Explored different approaches:
-  - Constant learning rate
-  - Adaptive step size (line search)
-  - Momentum and Nesterov acceleration
-- Tracked convergence by plotting the function value over iterations and visualizing the optimization path on the function’s contour plot.
+
+This project implements **Gradient Descent (GD)** from scratch in Python and explores several variations:
+
+- **Constant learning rate**
+- **Adaptive step size (line search)**
+- **Momentum**
+- **Nesterov acceleration**
+
+### Features
+
+- Tracks convergence via loss vs. iterations plots.
+- Visualizes the optimization trajectory on the Rosenbrock function’s contour plot.
+- Compares convergence behavior across methods.
+
+---
 
 ## 📊 Results
-- Basic Gradient Descent converges slowly and can oscillate near the valley.
-- Momentum and Nesterov acceleration significantly improve convergence speed.
-- Plots show the optimization trajectory approaching the global minimum at $(1, 1)$.
 
-**Included visualizations:**
-- Loss vs. iterations
-- Optimization path on contour plot
+| Method | Convergence Speed | Behavior Near Valley |
+|:--------|:----------------:|:--------------------|
+| Basic GD | Slow | Oscillates |
+| GD + Momentum | Faster | Smooth convergence |
+| GD + Nesterov | Fastest | Stable and accurate |
+
+**Visualizations:**
+- ![Loss curve](images/loss_curve.png)
+- ![Optimization path](images/optimization_path.png)
+
+The optimization trajectory clearly approaches the global minimum at **(1, 1)**.
+
+---
 
 ## 🧩 Files
-- `gradient_descent_rosenbrock.ipynb` → Python notebook with implementation and plots
-- `README.md` → this description
+
+| File | Description |
+|------|--------------|
+| `gradient_descent_rosenbrock.ipynb` | Jupyter notebook with full implementation |
+| `README.md` | Project overview |
+| `requirements.txt` | Dependencies |
+
+---
+
+## 🚀 How to Run
+
+```bash
+# Clone this repository
+git clone https://github.com/<your-username>/gradient-descent-rosenbrock.git
+cd gradient-descent-rosenbrock
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Open the notebook
+jupyter notebook gradient_descent_rosenbrock.ipynb
 
