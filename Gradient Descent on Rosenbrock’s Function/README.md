@@ -54,16 +54,4 @@ The optimization trajectory clearly approaches the global minimum at **(1, 1)**.
 
 ---
 
-## 🚀 How to Run
-
-```bash
-# Clone this repository
-git clone https://github.com/HenrikGundestrup/optimization-portfolio/gradient-descent-rosenbrock.git
-cd gradient-descent-rosenbrock
-
-# Install dependencies
-pip install -r requirements.txt
-
-# Open the notebook
-jupyter notebook gradient_descent_rosenbrock.ipynb
 
