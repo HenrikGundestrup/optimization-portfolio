@@ -58,7 +58,7 @@ The optimization trajectory clearly approaches the global minimum at **(1, 1)**.
 
 ```bash
 # Clone this repository
-git clone https://github.com/<your-username>/gradient-descent-rosenbrock.git
+git clone https://github.com/HenrikGundestrup/optimization-portfolio/gradient-descent-rosenbrock.git
 cd gradient-descent-rosenbrock
 
 # Install dependencies
